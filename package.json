@@ -10,6 +10,7 @@
     "react"
   ],
   "license": "MIT",
+  "homepage": "https:/mark-mansfield.github.io/test-deploy-with-custom-starter",
   "author": "Dinesh Pandiyan <flexdinesh@gmail.com>",
   "scripts": {
     "build": "gatsby build",
@@ -19,6 +20,7 @@
     "serve:build": "npm run clean && npm run build && http-server ./public",
     "start": "npm run develop",
     "start:prod": "npm run build && npm run serve:build",
+    "deploy": "npm run clean && npm run build && gh-pages -d public",
     "test": "jest"
   },
   "dependencies": {
